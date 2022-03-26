@@ -23,5 +23,7 @@ public class MainMaquinaA {
         } else {
             System.out.println("No responde a Baton");
         }
+        
+        perro1.saltar();
     }
 }

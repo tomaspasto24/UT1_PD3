@@ -9,7 +9,7 @@ package com.mycompany.ut1_pd3;
  *
  * @author TomasUcu
  */
-public class Perro {
+public class Perro implements Mamifero {
     private String nombre;
     
     public Perro(String nombre) {
@@ -26,5 +26,18 @@ public class Perro {
     
     public boolean respondeA(String unNombre) {
         return this.nombre.equals(unNombre);
+    }
+
+    public void caminar() {
+        System.out.println(getNombre() + " está caminando...");
+    }
+
+    public void correr() {
+        System.out.println(getNombre() + " está corriendo...");
+        
+    }
+
+    public void saltar() {
+        System.out.println(getNombre() + " está saltando...");
     }
 }
