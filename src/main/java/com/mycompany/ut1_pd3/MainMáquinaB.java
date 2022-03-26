@@ -38,5 +38,10 @@ public class MainMáquinaB {
         } else {
             System.out.println("No responde a Baton");
         }
+        
+        //Paso 5
+        gato1.saltar();
+        gato1.caminar();
+        gato1.correr();
     }
 }
