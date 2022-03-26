@@ -8,8 +8,9 @@ package com.mycompany.ut1_pd3;
  *
  * @author juan-
  */
-public class Gato {
+public class Gato implements Mamifero {
     
+    // Paso 1
     private String nombre;
     
     public Gato(String nombre){
@@ -23,5 +24,19 @@ public class Gato {
     }
     public boolean respondeA(String unNombre){
         return false;
+    }
+  
+    //Paso 4
+    public void caminar() {
+        System.out.println(getNombre() + " está caminando...");
+    }
+
+    public void correr() {
+        System.out.println(getNombre() + " está corriendo...");
+        
+    }
+
+    public void saltar() {
+        System.out.println(getNombre() + " está saltando...");
     }
 }
